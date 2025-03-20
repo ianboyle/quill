@@ -1,5 +1,5 @@
 
-/** RESET **/
+/** -------------------- RESET -------------------- **/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -49,26 +49,8 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+/** -------------------- VARIABLES --------------------  **/
 
-/** MEDIA QUERIES **/
-@media(max-width: 1200px) {
-
-}
-
-@media(max-width: 990px) {
-    
-}
-
-@media(max-width: 770px) {
-
-}
-
-@media(max-width: 575px) {
-
-}
-
-
-/** VARIABLES **/
 :root {
     /* PRIMARY COLORS */
     --arctic: #d0ebff;
@@ -91,9 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     --graphite: #212529;
 }
 
-/** STYLE **/
+/** -------------------- GLOBAL STYLES -------------------- **/
+
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--slate);
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,12 +90,10 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    text-align: center;
     font-size: 62px;
 }
 
 h2 {
-    text-align: center;
     font-size: 48px;
 }
 
@@ -125,12 +109,6 @@ h5 {
     font-size: 24px;
 }
 
-p, a, .small-text {
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--slate);
-}
-
 p {
     font-size: 20px;
 }
@@ -139,7 +117,8 @@ a {
     font-size: 16px;
 }
 
-/** CLASSES **/
+/** -------------------- COMPONENTS -------------------- **/
+
 .small-text {
     font-size: 12px;
 }
@@ -167,4 +146,47 @@ a {
 .btn-secondary:hover,
 .btn-secondary:active {
     color: var(--velvet-night);
+}
+
+/** -------------------- SECTIONS -------------------- **/
+
+/** ----- HERO SECTION ----- **/
+
+.hero-section {
+    text-align: center;
+}
+
+/** ----- FEATURES SECTION ----- **/
+
+.features-main-heading {
+    text-align: center;
+}
+
+/** ----- CTA SECTION ----- **/
+
+.cta-section {
+    text-align: center;
+}
+
+/** ----- FOOTER ----- **/
+.footer {
+    text-align: center;
+}
+
+/** -------------------- MEDIA QUERIES -------------------- **/
+
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 990px) {
+    
+}
+
+@media(max-width: 770px) {
+
+}
+
+@media(max-width: 575px) {
+
 }
