@@ -79,6 +79,50 @@ h1, h2, h3, h4, h5, h6 {
     --graphite: #212529;
     --black: #000;
     --white: #fff;
+
+    /* TEXT SIZES */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 1.875rem; /* 30px */
+    --text-4xl: 2.25rem; /* 36px */
+    --text-5xl: 3rem; /* 48px */
+    --text-6xl: 3.75rem; /* 60px */
+    --text-7xl: 4.5rem; /* 72px */
+    --text-8xl: 6rem; /* 96px */
+    --text-9xl: 8rem; /* 128px */
+
+    /* SIZING */
+    --size-5: 0.3125rem;   /* 5px */
+    --size-10: 0.625rem;  /* 10px */
+    --size-20: 1.25rem;   /* 20px */
+    --size-30: 1.875rem;  /* 30px */
+    --size-40: 2.5rem;    /* 40px */
+    --size-50: 3.125rem;  /* 50px */
+    --size-60: 3.75rem;   /* 60px */
+    --size-70: 4.375rem;  /* 70px */
+    --size-80: 5rem;      /* 80px */
+    --size-90: 5.625rem;  /* 90px */
+    --size-100: 6.25rem;  /* 100px */
+    --size-110: 6.875rem; /* 110px */
+    --size-120: 7.5rem;   /* 120px */
+    --size-130: 8.125rem; /* 130px */
+    --size-140: 8.75rem;  /* 140px */
+    --size-150: 9.375rem; /* 150px */
+    --size-160: 10rem;    /* 160px */
+    --size-170: 10.625rem;/* 170px */
+    --size-180: 11.25rem; /* 180px */
+    --size-190: 11.875rem;/* 190px */
+    --size-200: 12.5rem;  /* 200px */
+    --size-300: 18.75rem;  /* 300px */
+    --size-400: 25rem;     /* 400px */
+    --size-500: 31.25rem;  /* 500px */    
+
+    /* MISCELLANEOUS */
+    --nav-height: 300px
 }
 
 /** -------------------- GLOBAL STYLES -------------------- **/
@@ -98,31 +142,31 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 62px;
+    font-size: var(--text-6xl);
 }
 
 h2 {
-    font-size: 48px;
+    font-size: var(--text-5xl);
 }
 
 h3 {
-    font-size: 40px;
+    font-size: var(--text-4xl);
 
 }
 h4 {
-    font-size: 32px;
+    font-size: var(--text-3xl);
 }
 
 h5 {
-    font-size: 24px;
+    font-size: var(--text-2xl);
 }
 
 p {
-    font-size: 20px;
+    font-size: var(--text-base);
 }
 
 a {
-    font-size: 16px;
+    font-size: var(--text-base);
     display: inline-block;
 }
 
@@ -133,18 +177,19 @@ span {
 /** -------------------- COMPONENTS -------------------- **/
 
 .small-text {
-    font-size: 12px;
+    font-size: var(--text-xs);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .btn {
     font-weight: 400;
-    font-size: 16px;
-    padding: 15px 30px;
+    font-size: var(--text-base);
+    padding: var(--size-10) var(--size-30);
     border-radius: 8px;
 }
 
@@ -207,7 +252,7 @@ span {
 
 .highlight {
     color: var(--white);
-    padding: 5px 10px;
+    padding: var(--size-5) var(--size-10);
     border-radius: 4px;
 }
 
@@ -231,42 +276,44 @@ span {
     width: 100px;
 }
 
-
 /** -------------------- SECTIONS -------------------- **/
 
 /** ----- NAVBAR ----- **/
 .navbar {
-    margin-bottom: 200px;
+    margin-bottom: var(--size-200);
+    height: var(--nav-height);
 }
 
 /** ----- HERO SECTION ----- **/
 
 .hero-section {
+    height: calc(100vh - var(--nav-height));
+    min-height: 400px;
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: var(--size-100);
 }
 
 .hero-heading {
-    margin-bottom: 10px;
+    margin-bottom: var(--size-10);
 }
 
 .hero-paragraph {
-    margin-bottom: 50px;
+    margin-bottom: var(--size-50);
 }
 
 /** ----- FEATURES SECTION ----- **/
 
 .features-section {
-    margin-bottom: 300px;
+    margin-bottom: var(--size-300);
 }
 
 .features-main-heading {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: var(--size-80);
 }
 
 .features-heading {
-    margin-bottom: 20px;
+    margin-bottom: var(--size-20);
 }
 
 .features-img {
@@ -278,20 +325,20 @@ span {
 
 .cta-section {
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: var(--size-300);
 }
 
 .cta-card {
     text-align: center;
     background-color: var(--sky-blue);
     max-width: 1000px;
-    padding: 100px 200px;
+    padding: var(--size-100) var(--size-200);
     border-radius: 20px;
     margin: 0 auto;
 }
 
 .cta-heading {
-    margin-bottom: 30px;
+    margin-bottom: var(--size-30);
 }
 
 /** ----- FOOTER ----- **/
