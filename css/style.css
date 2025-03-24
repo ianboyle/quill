@@ -1,10 +1,11 @@
 
-/** -------------------- RESET -------------------- **/
-
-*, *::before, *::after {
+/** -------------------- GLOBAL RESET -------------------- **/
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-    
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,8 @@ body {
     
 img, picture, video, canvas, svg {
     display: block;
-    max-width: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 a {
@@ -27,6 +29,10 @@ a {
     
 ul, li[role='list'] {
     list-style: none;
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
 }
     
 input, button, textarea, select {
@@ -117,12 +123,22 @@ p {
 
 a {
     font-size: 16px;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
 }
 
 /** -------------------- COMPONENTS -------------------- **/
 
 .small-text {
     font-size: 12px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -249,8 +265,13 @@ a {
     margin-bottom: 80px;
 }
 
+.features-heading {
+    margin-bottom: 20px;
+}
+
 .features-img {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 /** ----- CTA SECTION ----- **/
@@ -263,9 +284,14 @@ a {
 .cta-card {
     text-align: center;
     background-color: var(--sky-blue);
-    width: 1000px;
+    max-width: 1000px;
     padding: 100px 200px;
     border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cta-heading {
+    margin-bottom: 30px;
 }
 
 /** ----- FOOTER ----- **/
