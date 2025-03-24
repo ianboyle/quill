@@ -98,7 +98,9 @@ h1, h2, h3, h4, h5, h6 {
     /* SIZING */
     --size-5: 0.3125rem;   /* 5px */
     --size-10: 0.625rem;  /* 10px */
+    --size-15: 0.9375rem; /* 15px */
     --size-20: 1.25rem;   /* 20px */
+    --size-25: 1.5625rem; /* 25px */
     --size-30: 1.875rem;  /* 30px */
     --size-40: 2.5rem;    /* 40px */
     --size-50: 3.125rem;  /* 50px */
@@ -122,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     --size-500: 31.25rem;  /* 500px */    
 
     /* MISCELLANEOUS */
-    --nav-height: 300px
+    --nav-height: 100px
 }
 
 /** -------------------- GLOBAL STYLES -------------------- **/
@@ -189,7 +191,7 @@ span {
 .btn {
     font-weight: 400;
     font-size: var(--text-base);
-    padding: var(--size-10) var(--size-30);
+    padding: var(--size-15) var(--size-30);
     border-radius: 8px;
 }
 
@@ -280,8 +282,15 @@ span {
 
 /** ----- NAVBAR ----- **/
 .navbar {
-    margin-bottom: var(--size-200);
     height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn-container {
+    display: flex;
+    gap: 1.5rem;
 }
 
 /** ----- HERO SECTION ----- **/
@@ -343,11 +352,24 @@ span {
 
 /** ----- FOOTER ----- **/
 .footer {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons-container {
+    display: flex;
+    gap: .5rem;
 }
 
 .social-icons {
     width: 20px;
+}
+
+.footer-links-container {
+    display: flex;
+    gap: .5rem;
 }
 
 /** -------------------- MEDIA QUERIES -------------------- **/
