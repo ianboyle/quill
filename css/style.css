@@ -48,6 +48,263 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+/** ---------- VARIABLES ---------- **/
+:root {
+    /* PRIMARY */
+    --color-arctic: #d0ebff;
+    --color-sky-blue: #339af0;
+    --color-deep-sea: #1c7ed6;
+
+  /* SECONDARY */
+    --color-moonlight-iris: #e5dbff;
+    --color-lavender: #9775fa;
+    --color-velvet-night: #7048e8;
+
+  /* TERTIARY */
+    --color-dawn: #ffe8cc;
+    --color-pumpkin: #ff922b;
+    --color-lava: #f76707;
+
+  /* GREY */
+    --color-pebble: #f1f3f5;
+    --color-slate: #495057;
+    --color-graphite: #212529;
+
+    /* FONT WEIGHT */
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+
+    /* FONT SIZE */
+    --font-size-xs: 0.75rem;     /* 12px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;      /* 16px */
+    --font-size-md: 1.125rem;    /* 18px */
+    --font-size-lg: 1.25rem;     /* 20px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-2xl: 1.875rem;   /* 30px */
+    --font-size-3xl: 2.25rem;    /* 36px */
+    --font-size-4xl: 3rem;       /* 48px */
+    --font-size-5xl: 3.75rem;    /* 60px */
+    --font-size-6xl: 4.5rem;     /* 72px */
+    --font-size-7xl: 6rem;       /* 96px */
+    --font-size-8xl: 8rem;       /* 128px */
+    --font-size-9xl: 9rem;       /* 144px */
+
+    /* MARGIN VALUES */
+    --m-5: 5px;
+    --m-10: 10px;
+    --m-15: 15px;
+    --m-20: 20px;
+    --m-25: 25px;
+    --m-30: 30px;
+    --m-40: 40px;
+    --m-50: 50px;
+    --m-60: 60px;
+    --m-70: 70px;
+    --m-80: 80px;
+    --m-90: 90px;
+    --m-100: 100px;
+    --m-125: 125px;
+    --m-150: 150px;
+    --m-200: 200px;
+    --m-250: 250px;
+    --m-300: 300px;
+    --m-400: 400px;
+    --m-500: 500px;
+}
+
+/** ---------- GLOBAL STYLES ---------- **/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+    color: var(--color-slate);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    letter-spacing: -2px;
+    color: var(--color-graphite);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+}
+
+h3 {
+    font-size: var(--font-size-3xl);
+}
+
+h4 {
+    font-size: var(--font-size-2xl);
+}
+
+h5 {
+    font-size: var(--font-size-xl);
+}
+
+p { 
+    font-size: var(--font-size-lg);
+}
+
+a { 
+    font-size: var(--font-size-md);
+}
+
+/** ---------- COMPONENTS ---------- **/
+
+.small-text{
+    font-size: var(--font-size-xs);
+}
+
+.btn {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-base);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.btn-primary:link, .btn-primary:visited {
+    color: white;
+    background-color: var(--color-sky-blue);
+    border: 2px solid var(--color-sky-blue);
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: white;
+    background-color: var(--color-deep-sea);
+    border: 2px solid var(--color-deep-sea);
+}
+
+.btn-primary-outline:link, .btn-primary-outline:visited {
+    color: var(--color-sky-blue);
+    background-color: white;
+    border: 2px solid var(--color-sky-blue);
+}
+
+.btn-primary-outline:hover, .btn-primary-outline:active {
+    color: var(--color-deep-sea);
+    background-color: white;
+    border: 2px solid var(--color-deep-sea);
+}
+
+.btn-secondary:link, .btn-secondary:visited {
+    color: white;
+    background-color: var(--color-lavender);
+    border: 2px solid var(--color-lavender);
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    color: white;
+    background-color: var(--color-velvet-night);
+    border: 2px solid var(--color-velvet-night);
+}
+
+.highlight {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.highlight-primary {
+    background-color: var(--color-sky-blue);
+}
+
+.highlight-secondary {
+    background-color: var(--color-lavender);
+}
+
+.highlight-tertiary {
+    background-color: var(--color-pumpkin);
+}
+
+.logo-md {
+    width: 100px;
+}
+
+.logo-sm {
+    width: 80px;
+}
+
+/** ---------- SECTIONS ---------- **/
+
+/** ----- HEADER ----- */
+
+
+/** ----- NAV ----- **/
+
+.navbar {
+    margin-bottom: var(--m-200);
+}
+
+/** ----- HERO ----- **/
+
+.hero-section {
+    text-align: center;
+    margin-bottom: var(--m-300);
+}
+
+.hero-heading {
+    margin-bottom: var(--m-20);
+}
+
+.hero-para {
+    margin-bottom: var(--m-50);
+}
+
+/** ----- FEATURES ----- **/
+
+.features-section {
+    margin-bottom: var(--m-300);
+}
+
+.features-main-heading {
+    text-align: center;
+    margin-bottom: var(--m-80);
+}
+
+.features-img {
+    width: 400px;
+}
+
+/** ----- CTA ----- **/
+
+/* .cta-section {
+
+} */
+
+.cta-card {
+    text-align: center;
+    background-color: var(--color-sky-blue);
+    width: 1000px;
+    padding: 100px 200px;
+    border-radius: 20px;
+    margin-bottom: var(--m-300);
+}
+
+/** ----- FOOTER ----- **/
+
+.footer {
+    text-align: center;
+}
+
+.social-icons {
+    width: 20px;
+}
+
 /** ---------- MEDIA QUERIES ---------- **/
 @media(max-width: 1200px) {
 
@@ -63,8 +320,4 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(max-width: 575px) {
 
-}
-
-html {
-    font-family: 'Inter', sans-serif;
 }
