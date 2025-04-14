@@ -129,6 +129,11 @@ body {
     color: var(--color-slate);
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
@@ -162,6 +167,11 @@ p {
 
 a { 
     font-size: var(--font-size-md);
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
 }
 
 /** ---------- COMPONENTS ---------- **/
