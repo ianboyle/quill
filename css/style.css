@@ -292,9 +292,9 @@ span {
 
 /** ----- CTA ----- **/
 
-/* .cta-section {
-
-} */
+.cta-section {
+    margin-bottom: var(--m-300);
+}
 
 .cta-card {
     text-align: center;
@@ -302,7 +302,7 @@ span {
     width: 1000px;
     padding: 100px 200px;
     border-radius: 20px;
-    margin-bottom: var(--m-300);
+    margin: 0 auto;
 }
 
 /** ----- FOOTER ----- **/
